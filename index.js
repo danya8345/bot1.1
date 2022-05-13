@@ -40,8 +40,10 @@ client.on('ready', () => {
       console.log(e)
     }
   }
+
 if (cmd === "ping"){
   msg.reply(`ping\n ${date.now() - msg.createdtimestamp}ms`)
 }
   
-  client.login(token);
+  bot.login(process.env.token);
+  //bot.login("")
